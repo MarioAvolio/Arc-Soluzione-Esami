@@ -37,7 +37,7 @@ db.tree.find({zipcode: 11204, status: "Alive"},{spc_latin: 1, dorocode:1, borona
 ## 3
 
 ```
-db.tree.find({spc_info.fall_color: "Yellow"}, {$or: [{spc_info.form: "Pyramidal}, {spc_info.form: "Upright"}]}, {spc_info.growth_rate: "Slow"})
+db.tree.find({spc_info.fall_color: "Yellow", {$or: [{spc_info.form: "Pyramidal}, {spc_info.form: "Upright"}]}, spc_info.growth_rate: "Slow"})
 ```
 
 ## 4
